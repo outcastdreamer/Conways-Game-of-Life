@@ -384,7 +384,7 @@ class Game_Of_Life:
 			os.system('cls')
 		Nvar_num=len(self.List_real_row_elems_count)
 		print ("\n\n\tTotal Number of boxes -> (%d x %d) => %d"%(Nvar_num,Nvar_num,Nvar_num**2))
-		Sprint ("\n\t           Current game instance => %d"%(self.Nvar_game_instance))
+		print ("\n\t           Current game instance => %d"%(self.Nvar_game_instance))
 		self.Nvar_game_instance+=1
 		print ("\n\n")
 		for i in range(len(self.List_ULTIMATO_COMBO_ELEMS)):
