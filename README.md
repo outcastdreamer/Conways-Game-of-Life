@@ -1,5 +1,5 @@
 **Conway's Game of Life**\
-**Author :** Saket Savarn (outcastdreamer)
+**Author : Saket Savarn (outcastdreamer)**
 
 This code works in python 3.x and for both platforms Linux and Windows.
 Conway's game of life is a zero player game played by the computer itself and follows the concept of cellular automata. 
