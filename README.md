@@ -1,4 +1,4 @@
-Conway's Game of Life
+Conway's Game of Life\
 Author : Saket Savarn (outcastdreamer)
 
 This code works in python 3.x and for both platforms Linux and Windows.
