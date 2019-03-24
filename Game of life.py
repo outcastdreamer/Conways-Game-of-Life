@@ -1,8 +1,5 @@
 #CONWAY's GAME OF LIFE
-<<<<<<< HEAD
-#Author : github.com/outcastdreamer (Saket Savarn)
-=======
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
+#AUTHOR : github.com/outcastdreamer (SAKET SAVARN)
 
 		#1)*Nvar_init_M -> The initial starting cordinate on X-Axis. It's static & -ve in nature (Doesn't change).
 		#2)*Nvar_init_N -> The initial starting cordinate on Y-Axis. It's static & +ve in nature (Doesn't change).
@@ -122,11 +119,7 @@ import os
 from pprint import pprint as pprint
 from time import sleep as sl
 from sys import platform
-<<<<<<< HEAD
 import random as ran
-=======
-from time import sleep
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
 
 class Game_Of_Life:
 #INITIALIZATION
@@ -179,14 +172,9 @@ class Game_Of_Life:
 			os.system("clear")
 		elif platform=="win32":
 			os.system('cls')
-<<<<<<< HEAD
 		print ("\t\t\t\t\t\t\t\t\t~ WELCOME TO THE GAME OF LIFE ~")
 		print ("\n\n   Kindly note that the values for X and Y coordinates must be equal in magnitude and opposite in sign where X cordinate has -ve value and Y cordinate has +ve value!!")
 		print ("\n\n\tThe values \"-10\" for X cooridnate and \"10\" for Y cooridnate are tested to be the best performance wise and hence I suggest you to use those values!")
-=======
-		print ("\t\t\t\t\t\t\tWELCOME TO THE GAME OF LIFE")
-		print ("\n\n\tKindly note that the values for X and Y co-ordinates must be equal in magnitude opposite in sign where X co-ordinate\n\thas -ve value and Y co-ordinate has +ve value!!")
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
 		self.Nvar_init_M=1
 		self.Nvar_init_N=-2
 		while abs(self.Nvar_init_M)!=abs(self.Nvar_init_N):
@@ -310,7 +298,6 @@ class Game_Of_Life:
 							'[-9, 7]','[-8, 7]','[-7, 7]',
 							'[-6, 6]','[-5, 5]',
 							'[-8, 4]','[-7, 4]','[-6, 4]']"""
-<<<<<<< HEAD
 	def The_choice(self):
 		Nvar_num=len(self.List_real_row_elems_count)
 		print("\n\n\t\tDo you want default input,random inputs or do you want to input your own selected life cells to begin the game with??")
@@ -321,11 +308,6 @@ class Game_Of_Life:
 			print("\n\n\tError!! Wrong input! Kindly enter the right input!")
 			self.The_choice()
 		if choice=="1":
-=======
-		print("\n\n\t\tDo you want default inputs or want to input your own selected life cells to begin the game with??")
-		choice=input("\n\n\tEnter your choice:\n\t\t\"Y\" for defualt inputs and \"N\" for user specified inputs : ")
-		if choice.upper()=="Y":
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
 			List_selected_elems=['[-9, 10]','[-8, 10]','[-7, 10]',
 							'[-10, 9]','[-10, 8]',
 							'[-9, 7]','[-8, 7]','[-7, 7]',
@@ -334,7 +316,6 @@ class Game_Of_Life:
 							'[-9, 6]','[-8, 6]','[-7, 4]',
 							'[-6, 6]','[-5, 6]',
 							'[-9, 8]','[-7, 3]','[-5, 4]',
-<<<<<<< HEAD
 							'[7, -6]','[7, -5]']
 			List_selected_elems.sort()
 			print ("\n\n\n\n COORDINATES OF LIFE CELLS SELECTED : ")
@@ -469,62 +450,10 @@ class Game_Of_Life:
 							break
 						except ValueError:
 							print ("\n\n\t\t\tERROR!!! PLEASE ENTER THE RIGHT VALUES!")
-=======
-							'[7, -6]','[7, -5]',
-							'[10, -4]','[9, -4]','[8, -4]']
-		else:
-			temppp=[]
-			List_selected_elems=[]
-			num = int(input("\n\n\t\tEnter no. of pre-selected cells you want to exist beforehand : "))
-			for i in range(num):
-				if str((i+1))[0]=='1':
-					x_cord = int(input("\nEnter x-axis coordinate for 1st live-cell : "))
-					while x_cord<self.Nvar_init_M or x_cord>(-self.Nvar_init_M):
-						print ("\n\n\tError!! The value you gave for x coordinate is out of range!! Kindly input again!")		
-						x_cord = int(input("\nEnter x-axis coordinate for 1st live-cell : "))
-					y_cord = int(input("Enter y-axis coordinate for 1st live-cell : "))
-					while y_cord>self.Nvar_init_N or y_cord<(-self.Nvar_init_N):
-						print ("\n\n\tError!! The value you gave for y coordinate is out of range!! Kindly input again!")		
-						y_cord = int(input("\nEnter y-axis coordinate for 1st live-cell : "))
-					temppp.append(x_cord)
-					temppp.append(y_cord)
-				elif str((i+1))[0]=='2':
-					x_cord = int(input("\nEnter x-axis coordinate for 2nd live-cell : "))
-					while x_cord<(self.Nvar_init_M) or x_cord>(-self.Nvar_init_M):
-						print ("\n\n\tError!! The value you gave for x coordinate is out of range!! Kindly input again!")		
-						x_cord = int(input("\nEnter x-axis coordinate for 2nd live-cell : "))
-					y_cord = int(input("Enter y-axis coordinate for 2nd live-cell : "))
-					while y_cord>self.Nvar_init_N or y_cord<(-self.Nvar_init_N):
-						print ("\n\n\tError!! The value you gave for y coordinate is out of range!! Kindly input again!")		
-						y_cord = int(input("\nEnter y-axis coordinate for 2nd live-cell : "))
-					temppp.append(x_cord)
-					temppp.append(y_cord)
-				elif str((i+1))[0]=='3':
-					x_cord = int(input("\nEnter x-axis coordinate for 3rd live-cell : "))
-					while x_cord<self.Nvar_init_M or x_cord>(-self.Nvar_init_M):
-						print ("\n\n\tError!! The value you gave for x coordinate is out of range!! Kindly input again!")		
-						x_cord = int(input("\nEnter x-axis coordinate for 3rd live-cell : "))
-					y_cord = int(input("Enter y-axis coordinate for 3rd live-cell : "))
-					while y_cord>self.Nvar_init_N or y_cord<(-self.Nvar_init_N):
-						print ("\n\n\tError!! The value you gave for y coordinate is out of range!! Kindly input again!")		
-						y_cord = int(input("\nEnter y-axis coordinate for 3rd live-cell : "))
-					temppp.append(x_cord)
-					temppp.append(y_cord)
-				else:
-					x_cord = int(input("\nEnter x-axis coordinate for %dth live-cell : "%(i+1)))
-					while x_cord<self.Nvar_init_M or x_cord>(-self.Nvar_init_M):
-						print ("\n\n\tError!! The value you gave for x coordinate is out of range!! Kindly input again!")		
-						x_cord = int(input("\nEnter x-axis coordinate for %dth live-cell : "%(i+1)))
-					y_cord = int(input("Enter y-axis coordinate for %dth live-cell : "%(i+1)))
-					while y_cord>self.Nvar_init_N or y_cord<(-self.Nvar_init_N):
-						print ("\n\n\tError!! The value you gave for y coordinate is out of range!! Kindly input again!")		
-						y_cord = int(input("\nEnter y-axis coordinate for %dth live-cell : "%(i+1)))
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
 					temppp.append(x_cord)
 					temppp.append(y_cord)
 				List_selected_elems.append(str(temppp))
 				temppp=[]
-<<<<<<< HEAD
 			List_selected_elems.sort()
 			print ("\n\n\n\n COORDINATES OF LIFE CELLS SELECTED : ")
 			print ("\n\n",List_selected_elems)
@@ -533,8 +462,6 @@ class Game_Of_Life:
 		else:
 			print("\n\t\t\t\t\t\tError!! Wrong input! Kindly enter the right input!")
 			self.The_choice()
-=======
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
 		#print (List_selected_elems)
 		#sleep(5)
 		k=0
@@ -682,13 +609,5 @@ class Game_Of_Life:
 			self.List_ULTIMATO_COMBO_ELEMS[l[m][0]][l[m][1]][l[m][2]]=l[m][3]
 		self.Display_game()
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 Game_Of_Life()
-=======
-Game_Of_Life()
->>>>>>> Removed Errors
-=======
-Game_Of_Life()
->>>>>>> b0e9dc942c4b1535bd8637dbdb6334e0cd80a5e9
