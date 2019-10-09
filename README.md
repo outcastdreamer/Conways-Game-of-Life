@@ -56,6 +56,6 @@ Hence the total no. of cells/boxes/grids = 21 x 21 = 441 in this case.
 6) You can change the speed of the game in line 537 and 555 of the code, where in inputting any numeric value (in seconds) makes
    the game faster or slower. Currently it's set at 0.01. Reducing the time increases flickering if the number of boxes are huge.
    Feel free to experiment with it.
-7) If you want to end the code abruptly then press CTRL+C to do so.   
+7) If you want to exit out then press CTRL+C to do so.   
   
   
