@@ -2,6 +2,8 @@
 **Author : Saket Savarn (outcastdreamer)**
 
 This code works in python 3.x and for both platforms Linux and Windows.
+Now a C version of this game is available too which was made by : [Shivendra Saurav](endrasaurav.github.io/), you can check his github profile by clicking [here](https://github.com/shivendrasaurav).
+
 Conway's game of life is a zero player game played by the computer itself and follows the concept of cellular automata. 
 This code is the miniature version of the famous game whose law where stated by [John Conway](https://en.wikipedia.org/wiki/John_Horton_Conway)
 who is also a celebrated mathematician.
@@ -52,7 +54,7 @@ Hence the total no. of cells/boxes/grids = 21 x 21 = 441 in this case.
    By experimentation I have found out that 1/3rd of total no. of boxes (or less than 1/3rd) give the best result.
    If total no. of boxes = 441, then 147 is a good value. Entering values which are 400+ in this case leads to over-population of live cells and fast killing (almost like a genocide :P)
 5) Choosing option "3" allows you to input your own coordinates of life-cells. This option is useful to check specific conditions like the "glider" or such recognizable patterns in Game of Life.
-   The range for this option is valid for all edge coordinates only (-10 to 10 in above example).
+   The range for this option is valid for all edge coordinates only (-10 to 10 in above example). So suppose you enter co-ordinate as -10,10 then the left most box will be alive by default in the beginning of the game. Make sure you don't chooes a big number or else you will end up inputting a lot of co-ordinates for the game.
 6) You can change the speed of the game in line 537 and 555 of the code, where in inputting any numeric value (in seconds) makes
    the game faster or slower. Currently it's set at 0.01. Reducing the time increases flickering if the number of boxes are huge.
    Feel free to experiment with it.
